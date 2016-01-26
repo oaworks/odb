@@ -15,7 +15,6 @@ from portality.view.account import blueprint as account
 from portality.view.api import blueprint as api
 from portality.view.media import blueprint as media
 from portality.view.pagemanager import blueprint as pagemanager
-from portality.view.feed import blueprint as feed
 
 
 app.register_blueprint(query, url_prefix='/query')
