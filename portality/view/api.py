@@ -320,7 +320,8 @@ def status():
         url = vals.get('url',False)
         if not url: abort(404)
 
-        res = _status(url, vals=vals)
+        #res = _status(url, vals=vals)
+        res = {}
         
         resp = make_response(json.dumps(res))
         resp.mimetype = "application/json"
