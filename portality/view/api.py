@@ -321,7 +321,7 @@ def status():
         if not url: abort(404)
 
         #res = _status(url, vals=vals)
-        res = {}
+        res = {"blocked":0,"wishlist":0,"url":url,"NOTE":"TEST STILL IN DEVELOPMENT","contentmine":{},"core":{},"crossref":{}}
         
         resp = make_response(json.dumps(res))
         resp.mimetype = "application/json"
