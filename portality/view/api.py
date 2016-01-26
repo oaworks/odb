@@ -79,9 +79,9 @@ blueprint = Blueprint('api', __name__)
 def api():
     resp = make_response( json.dumps({
         "README": {
-            "description": "Welcome to the openaccessbutton API.",
-            "documentation": "https://openaccessbutton.org/docs",
-            "version": "2.1"
+            "description": "Welcome to the opendatabutton API.",
+            "documentation": "https://openaccessbutton.org/docs (sharing oabutton docs just now, it works the same, new things coming)",
+            "version": "2.2"
         }
     }) )
     resp.mimetype = "application/json"
@@ -218,7 +218,7 @@ def blocked(bid=None):
             event.data['user_profession'] = current_user.data.get('profession','')'''
             event.save()
             # call the status api and save the output for this URL
-            _status(vals['url'], vals=vals)
+            #_status(vals['url'], vals=vals)
             
             resp = make_response( json.dumps( {'url':vals.get('url',''), 'id':event.id } ) )
             resp.mimetype = "application/json"
