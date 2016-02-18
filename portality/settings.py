@@ -9,7 +9,7 @@ ADMIN_NAME = "Cottage Labs"
 ADMIN_EMAIL = "sysadmin@openaccessbutton.org"
 
 # service info
-SERVICE_NAME = "Open Data Button"
+SERVICE_NAME = "Open Data Button (Beta)"
 SERVICE_TAGLINE = ""
 HOST = "0.0.0.0"
 DEBUG = True
@@ -27,7 +27,7 @@ SUPER_USER = ["test"]
 PUBLIC_REGISTER = True
 
 # can anonymous users get raw JSON records via the query endpoint?
-PUBLIC_ACCESSIBLE_JSON = True 
+PUBLIC_ACCESSIBLE_JSON = True
 
 
 # ========================
@@ -52,7 +52,7 @@ MAPPINGS = {
                     "properties": {
                         "geo": {
                             "type": "geo_point",
-                            "lat_lon": True              
+                            "lat_lon": True
                         }
                     }
                 }
@@ -147,12 +147,10 @@ CONTENT_FOLDER = "content"
 # etherpad endpoint if available for collaborative editing
 COLLABORATIVE = 'https://cottagelabs.com/sp'
 
-# when a page is deleted from the index should it also be removed from 
+# when a page is deleted from the index should it also be removed from
 # filesystem and etherpad (if they are available in the first place)
 DELETE_REMOVES_FS = False # True / False
 DELETE_REMOVES_EP = False # MUST BE THE ETHERPAD API-KEY OR DELETES WILL FAIL
 
 # disqus account shortname if available for page comments
 COMMENTS = ''
-
-
