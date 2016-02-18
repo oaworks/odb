@@ -1,28 +1,28 @@
 /*
 oabutton dark blue (which is the main text colour) is 212f3f
-odbutton medium/dark blue is 5E8EC1
 medium blue is 29cae6
 light blue is 9dfdfd
 orange (the action colour) is f04717
 grey is c8c8c8
 white is ffffff
+odb blue: 398bc5
 */
 
 /*html{
-    background-color:#212f3f;
+    background-color:#398bc5;
 }*/
 html, body{
     margin:0;
     padding:0;
     font-size:1em;
     font-family: 'Raleway', sans-serif;
-    color:#212f3f;
+    color:#398bc5;
 }
 body{
     margin-top:50px;
 }
 hr{
-    border-color:#212f3f;
+    border-color:#398bc5;
 }
 .row{
     padding-top:30px;
@@ -30,19 +30,19 @@ hr{
 }
 .navbar-brand{
     font-weight:bold;
-    color:#212f3f;
+    color:#398bc5;
 }
 .navbar-nav li a{
     font-size:0.8em;
-    color:#212f3f;
+    color:#398bc5;
     font-weight:bold;
 }
 .navbar-nav li a:hover{
-    color:#212f3f;
+    color:#398bc5;
     background-color:#f04717;
 }
 .navbar-nav li.active{
-    color:#212f3f;
+    color:#398bc5;
     background-color:#9dfdfd;
 }
 .navbar-nav{
@@ -53,7 +53,7 @@ hr{
 }
 .btn-action{
      background-color:#f04717;
-     color:#212f3f;
+     color:#398bc5;
 }
 .jumbotron{
     background-color:#f04717;
@@ -63,7 +63,7 @@ hr{
     padding-bottom:40px;
     z-index:1000;
     position:relative;
-    background-color:#212f3f;
+    background-color:#398bc5;
     min-height:800px;
     margin:-10px 0 0 0;
 }
@@ -79,7 +79,7 @@ hr{
     background-color:#f04717;
 }
 .strap-action a{
-    color:#212f3f;
+    color:#398bc5;
 }
 .action{
     color:#f04717;
@@ -88,14 +88,14 @@ hr{
     background-color:#fff;
 }
 .strap-white p, .strap-white h1, .strap-white h2, .strap-white h3, .strap-white h4, .strap-white h5, .strap-white h6{
-    color:#212f3f;
+    color:#398bc5;
 }
 
 .bubble{
     position: relative;
     width: 100%;
     padding: 10px;
-    background: #212f3f;
+    background: #398bc5;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -109,7 +109,7 @@ hr{
     position: absolute;
     border-style: solid;
     border-width: 15px 15px 0;
-    border-color: #212f3f transparent;
+    border-color: #398bc5 transparent;
     display: block;
     width: 0;
     z-index: 1;
@@ -151,8 +151,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00212f3f', e
   height: 400px;
 }
 .carousel-indicators li{
-    background-color:#212f3f;
-    border-color:#212f3f;
+    background-color:#398bc5;
+    border-color:#398bc5;
 }
 .carousel-indicators li.active{
     background-color:#f04717;
