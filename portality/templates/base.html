@@ -19,7 +19,6 @@
         <li><a href="/support">Support</a></li>
         <li><a href="/about">About us</a></li>
 
-<!--
         {% if current_user.is_anonymous() %}
         <li><a href="{{url_for('account.login')}}">Login</a></li>
         {% else %}
@@ -38,14 +37,15 @@
           </ul>
         </li>
         {% endif %}
-        
+
+        <!--
         {% if current_user.is_anonymous() %}
         <li style="background-color:#f04717;color:#212f3f;height:55px;z-index:10000;
         -webkit-border-bottom-right-radius: 5px;-webkit-border-bottom-left-radius: 5px;
         -moz-border-radius-bottomright: 5px;-moz-border-radius-bottomleft: 5px;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;">
         <a href="/#download" style="font-size:1.2em;font-weight:bold;" id="bfb">Download</a></li>
         {% endif %}
--->
+      -->
       </ul>
     </div>
   </div>
@@ -68,6 +68,7 @@
 
 {% block content %}{% endblock %}
 
+<!--
 {% if current_user.is_anonymous() and request.path not in ['/account/login','/account/forgot'] and request.path.lstrip('/').split('/')[0] not in ['docs'] %}
 <a name="download"> </a>
 <div class="strap strap-white" id="downloadbox">
@@ -147,7 +148,7 @@
     </div>
 </div>
 {% endif %}
-
+-->
 
 
 <div class="strap strap-compact" id="footer">
@@ -155,11 +156,12 @@
         <div class="row">
             <div class="col-md-2">
                 <ul style="list-style-type: none;">
-						<li><a href="https://openaccessbutton.org/blog">Blog</a></li>
-						<li><a href="https://openaccessbutton.org/contact" target="_top">Contact Us</a></li>
+						<li><a href="mailto:legal@openaccessbutton.org?Subject=Hello" target="_top">Legal</a></li>
+						<li><a href="https://openaccessbutton.org/about/">FAQ</a></li>
+						<li><a href="/blog">Blog</a></li>
+						<li><a href="/contact" target="_top">Contact Us</a></li>
 						<li><a href="mailto:media@openaccessbutton.org?Subject=Hello" target="_top">Press</a></li>
 						<li><a href="https://openaccessbutton.org/support">For Developers</a></li>
-						<li><a href="https://data.openaccessbutton.org/general-feedback/">Feedback</a></a></li>
 							</ul>
             </div>
             <div class="col-md-2">
